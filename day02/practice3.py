@@ -84,3 +84,42 @@ list_x = [1, 2, 3]
 list_y = [4, 5]
 list_z=[*list_x,*list_y]
 print(list_z)
+
+
+
+
+
+key_list=["name","hp","mp","level"]
+value_list=["기사",123,122,5]
+character={}
+
+for i in range(len(value_list)):
+    character[key_list[i]]=value_list[i]
+print(character)
+
+
+
+limit = 10000
+i = 0
+total = 0
+
+while True:
+    i += 1       
+    total += i    
+    
+    if total > limit:
+        print(f"{i}를 더할 때 {limit}를 넘으며, 그때의 값은 {total}입니다.")
+        break
+
+
+max_value=0
+a=0
+b=0
+
+for i in range(1,51):
+    j=100-i
+    if max_value<i*j:
+      max_value=i*j
+      a=j
+      b=i
+print(a,b,max_value)
