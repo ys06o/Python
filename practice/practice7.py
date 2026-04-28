@@ -21,6 +21,8 @@
 
 import os
 import csv
+users="users.txt"
+data=[]
 def menu2():
   menu_input=input('1.지역명 검색 2.금액 범위 검색 3.전체 통계 조회')
   
@@ -28,7 +30,6 @@ def menu2():
     pass
   else:
     pass
-
 def signup():
     users = 'users.txt'
     if not os.path.exists(users):

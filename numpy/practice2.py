@@ -54,8 +54,8 @@ print(x[[0,2,4]])
 x = np.array([10, 20, 30, 40, 50])
 
 print(x[1:4])
-print(x[0:3])
-print(x[0::2])
+print(x[:3])
+print(x[::2])
 # 문제 5: 2차원 배열 슬라이싱
 
 # x = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]]) 배열에서 
@@ -86,8 +86,10 @@ print(x[1, :])
 
 x = np.array([1, 2, 3, 4, 5])
 y=x[1:4]
+print(x.ctypes.data)
 print(y)
 y[0]=99
+print(y.ctypes.data)
 print(y) #[99  3  4]
 print(x) #[ 1 99  3  4  5]
 #y[0]이 가르키는 것은 x[1]이기때문에 즉 y=x[1:4]는 실제로 x[1]값에 주소를 참조하는것이다.
