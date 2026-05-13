@@ -1,0 +1,4 @@
+,name,age,city,score2,score,passed
+a,apple,32,seoul,100,10.0,True
+b,bee,70,busan,15,20.0,False
+c,cat,11,incheon,21,,False
